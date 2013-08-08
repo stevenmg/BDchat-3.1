@@ -22,8 +22,8 @@ public class CmdBDchatListener implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		BDchatPlayer BDplayer = BDchat.BDchatPlayerList.get(sender.getName());
 		if (sender instanceof Player) {
-			if(cmd.getName().equalsIgnoreCase("bdchat") && sender.hasPermission("essentials.build")){
-					if (args.length() == 0 || args[0].equalsIgnoreCase("help")) {
+			if(cmd.getName().equalsIgnoreCase("bdchat")){
+					if (args.length == 0 || args[0].equalsIgnoreCase("help")) {
 						sender.sendMessage(helpMessage.helpMsg[0]);
 						sender.sendMessage(helpMessage.helpMsg[1]);
 						sender.sendMessage(helpMessage.helpMsg[2]);
