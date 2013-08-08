@@ -31,8 +31,7 @@ public class CmdBDchatListener implements CommandExecutor {
 						sender.sendMessage(helpMessage.helpMsg[4]);
 						sender.sendMessage(helpMessage.helpMsg[5]);
 					
-					}
-					if (args[0].equalsIgnoreCase("list")) {
+					} else if (args[0].equalsIgnoreCase("list")) {
 						BDplayer.getPlayer().sendMessage(
 								ChatColor.GRAY + "----------" + ChatColor.RED +  "[" + ChatColor.GREEN + "BDchat" + ChatColor.RED + "]" + ChatColor.GRAY +"----------");
 						for (Channel currentChannel1 : BDchat.channelList.values()) {
